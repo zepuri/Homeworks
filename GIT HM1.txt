@@ -1,0 +1,202 @@
+Создать внешний репозиторий c названием JSON - зайти на github.com > во вкладке repositories нажать "New" > в названии ввести "JSON" и поставь галочку add readme file > нажать create repositories
+
+Клонировать репозиторий JSON на локальный компьютер -  git clone https://github.com/zepuri/JSON.git
+
+Внутри локального JSON создать файл “new.json” -cat > new.json
+
+Добавить файл под гит - git add .
+
+Закоммитить файл - git commit -m "JSON file"
+
+Отправить файл на внешний GitHub репозиторий - git push
+
+Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата) - vim new.json
+{
+        "Surname": "Potemkin",
+        "name": "Dmitry",
+        "Surname": "Timurovich",
+        "Age": 30,
+        "Number_of_pets": 3,
+        "Future_desired_salary": 5000
+
+}
+ESC >> :x >> Enter
+
+Отправить изменения на внешний репозиторий - git commit -am "My information" и git push
+
+Создать файл preferences.json - cat > preferences.json
+
+В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON - vim preferences.json
+{
+        "Favorite_movie": "Coach_Carter",
+        "Favorite_TV_series": "Breaking_bad",
+        "Favorite_food": "Shrimp",
+        "Favorite_time_of_the_year": "Summer",
+        "The_country_I_want_to_visit": "USA"
+
+}
+ESC >> :x >> Enter
+
+Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON - cat > skils.json и 
+vim skils.json
+{
+        "The_skils_I_will_get_on_course": {
+                                                "Number_1": "Client-server",
+                                                "Number_2": "LINUX",
+                                                "Number_3": "GIT",
+                                                "Number_4": "SQL",
+                                                "Number_5": "Postman",
+                                                "Number_6": "DevTools",
+                                                "Number_7": "Jmetr"
+        }
+
+}
+ESC >> :x >> Enter
+
+Отправить сразу 2 файла на внешний репозиторий - git add preferences.json skils.json, git commit -m "About me and course", git push 
+
+На веб интерфейсе создать файл bug_report.json - на github в разделе repositories нажать Add file > Create new file > в названии ввести bug_report.json
+
+Сделать Commit changes (сохранить) изменения на веб интерфейсе - нажать commit new file
+
+На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON - выбрать в списке файл bug_report.json > нажать значек карандаша > ввести текст в формате JSON
+{
+  "Heading": "The transition icon in the telegram on the main page does not work",
+  "Step_1": "Open the website https://sportsteel.ru/",
+  "Step_2": "Click icon telegram",
+  "Expected_result": "Telegram page is opened",
+  "Actual_result": "the page does not open"
+}
+ESC >> :x >> Enter
+
+Сделать Commit changes (сохранить) изменения на веб интерфейсе - в футере страницы нажать "Commit changes"
+
+Синхронизировать внешний и локальный репозиторий JSON - git pull
+
+Создать внешний репозиторий c названием XML - на сайте github.com во вкладке "Repositories" нажать "New", ввести название репозитория "XML", поставь галочку Add a README  file, нажать "Create repository"
+
+Клонировать репозиторий XML на локальный компьютер - git clone https://github.com/zepuri/XML.git
+
+Внутри локального XML создать файл “new.xml” - cat > new.xml
+
+Добавить файл под гит - git add .
+
+Закоммитить файл - git commit -m "XML"
+
+Отправить файл на внешний GitHub репозиторий - git push
+
+Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML - vim new.xml 
+<About_Me>
+   <Name>Dmitry</Name>
+   <Last_name>Timurovich</Last_name>
+   <Age>30</Age>
+   <Pets>3</Pets>
+   <Future_salary>140000</Future_salary>
+</About_Me>
+ESC >> :x >> Enter
+
+Отправить изменения на внешний репозиторий - git add . git commit -m "About me XML" git push
+
+Создать файл preferences.xml - cat > perferences.xml
+
+В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате XML - vim perfeces.xml
+<About_Me>
+        <Favorite_film>Coach Carter</Favorite_film>
+        <Favorite_TV_series>Breaking bad</Favorite_TV_series>
+        <Favorite_food>Pizza</Favorite_food>
+        <Favorite_season>Summer</Favorite_season>
+        <The_country_I_want_to_visit>USA</The_country_I_want_to_visit>
+</About_Me>
+ESC >> :x >> Enter
+
+Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML - cat > skils.xml
+vim skills.xml
+<About_skills>
+        <Skill_1>Mobile testing</Skill>
+        <Skill_2>SQL</Skill_2>
+        <Skill_3>Postman</Skill_3>
+        <Skill_4>Linux</Skill_4>
+        <Skill_5>GIT</Skill_5>
+        <Skill_6>Jmetr</Skill_6>
+</About_skills>
+ESC >> :x >> Enter
+
+Сделать коммит в одну строку - git add.  git commit -m "preferences and skills"
+
+Отправить сразу 2 файла на внешний репозиторий - git push
+
+На веб интерфейсе создать файл bug_report.xml - на github.com открыть репозиторий XML нажать "Add file", "Create new file", в названии ввести "bug_report.xml".
+
+Сделать Commit changes (сохранить) изменения на веб интерфейсе - в футере нажать "Commit new file".
+
+На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML - в рпепозитории сайта нажать на файл bug_report.xml > нажать значок карандаша для редактирования 
+<bug_report>
+  <Heading>The transition icon in the telegram on the main page does not work</Heading>
+  <Step_1>Open the website https://sportsteel.ru/</Step_1>
+  <Step_2>Click icon telegram</Step_2>
+  <Expected_result>Telegram page is opened</Expected_result>
+  <Actual_result>The page does not open</Actual_result>
+</bug_report>
+ESC >> :x >> Enter
+
+Сделать Commit changes (сохранить) изменения на веб интерфейсе - в футере нажать "Commit changes"
+
+Синхронизировать внешний и локальный репозиторий XML - git pull
+
+Создать внешний репозиторий c названием TXT - на сайте github.com во вкладке "Repositories" нажать "New", ввести название репозитория "TXT", поставь галочку Add a README  file, нажать "Create repository"
+
+Клонировать репозиторий TXT на локальный компьютер - git clone https://github.com/zepuri/TXT.git
+
+Внутри локального TXT создать файл “new.txt” - cd TXT >>>> touch new.txt
+
+Добавить файл под гит - git add .
+
+Закоммитить файл - git commit -m "New TXT"
+
+Отправить файл на внешний GitHub репозиторий - git push
+
+Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT - vim new.txt
+Surname - Potemkin
+Name - Dmitry
+Patronymic - Timurovich
+Age - 30
+Number of pets - 3
+Desired salary - 140000
+ESC >> :x >> Enter
+
+Отправить изменения на внешний репозиторий - git commit -am "About me txt" >>>> git push
+
+Создать файл preferences.txt - touch preferences.txt
+
+В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате TXT - vim preferences.txt
+Favorite film - Coach Carter
+Favorite TV series - Breaking Bad
+Favorite fodd- pizza
+Favorite season - summer
+The country I want to visit - USA
+ESC >> :x >> Enter
+
+Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT - touch skils.txt >>>> vim skils.txt
+Skils on the course: Mobile testing, SQL, Postman, Linux, GIT, JMETR
+ESC >> :x >> Enter
+
+Сделать коммит в одну строку - git add . >>>> git commit -m "Preferences and skils"
+
+Отправить сразу 2 файла на внешний репозиторий - git push
+
+На веб интерфейсе создать файл bug_report.txt - на github в разделе repositories нажать Add file > Create new file > в названии ввести bug_report.txt
+
+Сделать Commit changes (сохранить) изменения на веб интерфейсе - нажать commit new file
+
+На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT - выбрать в списке файл bug_report.txt > нажать значок карандаша > ввести текст в формате TXT
+Heading: The transition icon in the telegram on the main page does not work
+Step_1: Open the website https://sportsteel.ru
+Step_2: Click icon telegram
+Expected_result: Telegram page is opened
+Actual_result: The page does not open
+
+Сделать Commit changes (сохранить) изменения на веб интерфейсе - нажать "Commit changes"
+
+Синхронизировать внешний и локальный репозиторий TXT - git pull
+
+
