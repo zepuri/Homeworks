@@ -52,3 +52,4 @@
                                mv page_1.txt page_4.json ../step_3
                                После нажимаем ctrl+x - y -enter
                                Для запуска прописываем команду bash myscript.sh
+                               
