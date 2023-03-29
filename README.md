@@ -1,2 +1,2 @@
-# Homeworks from course
+# All homeworks from course
 
